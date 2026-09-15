@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VAYB Underground × Книжный · 2 ноября</title>
+<meta name="description" content="Шесть артистов московской техно-рейв тусовки на одну ночь в Книжном. Вход свободный. Презентация лайнапа для клуба.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VAYB Underground × Книжный · 2 ноября">
+<meta property="og:description" content="S.A.Y., STUDMIRE, Trust True, Forbidden Rave, BASSDUMA, Broken Stars. Шесть артистов на одну ночь, вход свободный.">
+<meta property="og:image" content="https://andrewkireev.github.io/vayb-underground/img/og.jpg">
+<meta property="og:url" content="https://andrewkireev.github.io/vayb-underground/">
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.ico?v=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0c; --surface:#121217; --line:#23232b; --ink:#f2f2ef; --muted:#9d9da8;
+  --acid:#d9ff43; --cyan:#a9f8ff; --hot:#ff4b7a;
+  --head:'Unbounded',system-ui,sans-serif; --body:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.eyebrow{font-family:var(--head);font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--acid)}
+
+/* top bar */
+.top{display:flex;justify-content:space-between;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.brand{font-family:var(--head);font-weight:800;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.brand span{color:var(--acid)}
+.top .date{font-family:var(--head);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* hero */
+.hero{padding:56px 0 40px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:auto -20% -60% auto;width:70vw;max-width:760px;aspect-ratio:1;border-radius:50%;background:radial-gradient(closest-side,rgba(217,255,67,.13),transparent 70%);pointer-events:none}
+.hero h1{font-family:var(--head);font-weight:800;font-size:clamp(30px,6.2vw,64px);line-height:1.02;letter-spacing:-.01em;margin:14px 0 22px;max-width:14ch}
+.hero h1 em{font-style:normal;color:var(--acid)}
+.hero .lead{font-size:clamp(17px,2.2vw,21px);max-width:60ch;color:#d5d5dc;margin:0 0 28px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin:0 0 30px;padding:0;list-style:none}
+.facts li{font-family:var(--head);font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.facts li b{color:var(--acid);font-weight:600}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 18px 16px}
+.stat .n{font-family:var(--head);font-weight:800;font-size:clamp(26px,4vw,38px);line-height:1;color:var(--ink)}
+.stat .l{margin-top:8px;color:var(--muted);font-size:14px;line-height:1.35}
+
+/* sections */
+section{padding:52px 0;border-top:1px solid var(--line)}
+h2{font-family:var(--head);font-weight:800;font-size:clamp(22px,3.6vw,34px);line-height:1.1;margin:10px 0 26px;letter-spacing:-.01em}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.why{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
+.why h3{font-family:var(--head);font-weight:600;font-size:16px;margin:0 0 10px;line-height:1.3}
+.why p{margin:0;color:#cfcfd6;font-size:15px}
+
+/* lineup */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.card.head{border-color:rgba(217,255,67,.45)}
+.card .ph{position:relative;aspect-ratio:1/1;background:#000}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .role{position:absolute;left:14px;top:14px;background:rgba(10,10,12,.82);backdrop-filter:blur(6px);color:var(--acid);font-family:var(--head);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;padding:7px 10px;border-radius:999px;font-weight:600}
+.card .body{padding:20px 20px 22px;display:flex;flex-direction:column;gap:12px;flex:1}
+.card h3{font-family:var(--head);font-weight:800;font-size:24px;margin:0;line-height:1.05}
+.card .genre{color:var(--cyan);font-size:13px;letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+.card p{margin:0;font-size:15px;color:#d5d5dc}
+.card .facts2{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:14px;color:#cfcfd6}
+.card .facts2 li{padding-left:14px;position:relative}
+.card .facts2 li:before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--acid)}
+.card .pitch{border-left:3px solid var(--acid);padding:2px 0 2px 14px;font-size:15px;color:var(--ink)}
+.card .pitch b{font-family:var(--head);font-weight:600;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--acid);display:block;margin-bottom:5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--line);border-radius:999px;padding:5px 11px;font-size:12.5px;color:#cfcfd6;background:#0e0e12}
+.chip b{color:var(--ink);font-weight:600}
+.links{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:auto;padding-top:6px;font-size:13.5px}
+.links a{color:var(--cyan)}
+
+/* deal */
+.deal{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.step{border:1px solid var(--line);border-radius:16px;padding:22px;background:var(--surface)}
+.step .k{font-family:var(--head);font-weight:800;font-size:30px;color:var(--acid);line-height:1;margin-bottom:12px}
+.step p{margin:0;font-size:15px;color:#d5d5dc}
+.contact{margin-top:26px;background:linear-gradient(135deg,rgba(217,255,67,.14),rgba(169,248,255,.08));border:1px solid rgba(217,255,67,.35);border-radius:18px;padding:26px;display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center;justify-content:space-between}
+.contact .who{font-family:var(--head);font-weight:600;font-size:16px}
+.contact .who small{display:block;font-family:var(--body);font-weight:400;color:var(--muted);font-size:14px;margin-top:4px}
+.btn{display:inline-block;background:var(--acid);color:#0a0a0c;font-family:var(--head);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;padding:14px 22px;border-radius:999px}
+.btn:hover{text-decoration:none;filter:brightness(1.06)}
+
+footer{padding:34px 0 46px;border-top:1px solid var(--line);color:var(--muted);font-size:13.5px;display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+footer a{color:var(--muted)}
+@media (max-width:520px){
+  .hero{padding:40px 0 32px}
+  .card h3{font-size:22px}
+  .contact{padding:22px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">VAYB <span>Underground</span></div>
+    <div class="date">Книжный · 2 ноября</div>
+  </header>
+
+  <div class="hero">
+    <div class="eyebrow">Презентация лайнапа для клуба</div>
+    <h1>Шесть артистов московской <em>техно-рейв</em> тусовки. Одна ночь. Вход свободный.</h1>
+    <p class="lead">VAYB Underground - лейбл и вечеринки Andrew Bright. Состав собран из людей, на которых в Москве ходят. Два резидента BLAASH, экс-резидент System 108 и Monasterio, автор рейв-рилзов с миллионными просмотрами и дуэт, который уже играл в Книжном.</p>
+    <ul class="facts">
+      <li><b>Когда</b> 2 ноября</li>
+      <li><b>Где</b> Книжный, Покровский бульвар 6/20с1</li>
+      <li><b>Вход</b> свободный</li>
+      <li><b>Звук</b> techno · hard techno · breakbeat · rave</li>
+    </ul>
+    <div class="stats">
+      <div class="stat"><div class="n">260 тыс.</div><div class="l">слушателей в месяц на Яндекс Музыке у трёх артистов лайнапа</div></div>
+      <div class="stat"><div class="n">1,7 млн</div><div class="l">просмотров у лучшего рилза Forbidden Rave про московский рейв</div></div>
+      <div class="stat"><div class="n">33 тыс.</div><div class="l">подписчиков у BLAASH, чьи резиденты открывают и держат ночь</div></div>
+    </div>
+  </div>
+
+  <section id="why">
+    <div class="eyebrow">Зачем это клубу</div>
+    <h2>Полный зал на бесплатном входе и своя публика у каждого имени</h2>
+    <div class="cols">
+      <div class="why"><h3>Люди приходят на имена, а не на афишу</h3><p>У каждого артиста своя аудитория, которая ходит за ним по клубам. S.A.Y. и STUDMIRE ведут за собой публику BLAASH, Trust True - техно-людей, Forbidden Rave и BASSDUMA - свою тусовку. Шесть кругов, которые почти не пересекаются.</p></div>
+      <div class="why"><h3>Вечер сам себя снимает</h3><p>Forbidden Rave делает рилзы о московских вечеринках, лучшие набирают сотни тысяч и миллионы просмотров. Ночь в Книжном попадёт в его ленту и телеграм-канал. Это контент про клуб, который клубу не нужно заказывать.</p></div>
+      <div class="why"><h3>Формат под площадку</h3><p>Свободный вход, бар работает, музыка от электро и брейкбита до жёсткого техно. Публика та же, что ходит на BLAASH, СБРОД и System 108. Всё, что нужно от клуба: площадка и бюджет на тех артистов, которые интересны именно вам.</p></div>
+    </div>
+  </section>
+
+  <section id="lineup">
+    <div class="eyebrow">Лайнап</div>
+    <h2>Кого зовём и зачем</h2>
+    <div class="grid">
+
+      <article class="card head">
+        <div class="ph"><img src="img/say.jpg" alt="S.A.Y."><span class="role">Хедлайнер</span></div>
+        <div class="body">
+          <h3>S.A.Y.</h3>
+          <div class="genre">techno · hard techno · breakbeat · rave</div>
+          <p>Диджей, продюсер, резидент BLAASH и сооснователь лейбла BRAAT. Альбомы «MY NAME IS» и «MOSHPIT: VOL.1», синглы «Senta» и «Tariki» перевалили за миллион прослушиваний, ремикс для Gorilla Zippo.</p>
+          <div class="pitch"><b>Зачем зовём</b>Самый собирающий резидент BLAASH: у него народная любовь, на его сеты идут отдельно. Ядро вечера, от него строится весь состав.</div>
+          <div class="chips"><span class="chip"><b>185 тыс.</b> слушателей в месяц</span><span class="chip"><b>11,6 тыс.</b> в Instagram</span><span class="chip">SIGMA Festival 2026, главная сцена</span></div>
+          <div class="links"><a href="https://music.yandex.ru/artist/984750" target="_blank" rel="noopener">Яндекс Музыка</a><a href="https://www.instagram.com/saymuz/" target="_blank" rel="noopener">Instagram</a><a href="https://t.me/blaash_tusa" target="_blank" rel="noopener">BLAASH</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/studmire.jpg" alt="STUDMIRE"><span class="role">Резидент BLAASH</span></div>
+        <div class="body">
+          <h3>STUDMIRE</h3>
+          <div class="genre">electro · ломаные ритмы · дисторшн</div>
+          <p>Продюсер и резидент BLAASH. Релизы на СТВОЛ, GESTALT, SVODKA и DISCO TEQUA, два совместных альбома с Пашей Техником. Треки стоят в редакционных подборках Яндекса «Русский рейв» и «Русская электроника».</p>
+          <div class="pitch"><b>Зачем зовём</b>Второй голос BLAASH. Та же публика, другой звук: электро и ломаные ритмы вместо прямой бочки. Плюс имя, которое знают за пределами тусовки благодаря Паше Технику.</div>
+          <div class="chips"><span class="chip"><b>66 тыс.</b> слушателей в месяц</span><span class="chip"><b>5,5 тыс.</b> в Instagram</span><span class="chip">SIGMA Festival 2026, главная сцена</span></div>
+          <div class="links"><a href="https://music.yandex.ru/artist/8780538" target="_blank" rel="noopener">Яндекс Музыка</a><a href="https://www.instagram.com/1001dualshock/" target="_blank" rel="noopener">Instagram</a><a href="https://t.me/prodbystudmire" target="_blank" rel="noopener">Telegram</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/trust-true.jpg" alt="Trust True"><span class="role">Экс-резидент System 108</span></div>
+        <div class="body">
+          <h3>Trust True</h3>
+          <div class="genre">hard techno · drum &amp; bass · electro · hard groove</div>
+          <p>Десять лет за пультом. Экс-резидент Monasterio и System 108, основатель лейбла Trust True Trax и школы продакшена. Релизы на RAW (Франция), Planet Rhythm, 44 Label Group. Его треки играли I Hate Models, Kobosil, Perc и Rebekah. Играл в Arma, Mutabor, Родне, Pluton, RNDM.</p>
+          <div class="pitch"><b>Зачем зовём</b>Громкое имя для техно-публики. Технари придут на имя, а не на компанию: это тот пласт людей, который остальной лайнап сам не закрывает.</div>
+          <div class="chips"><span class="chip"><b>11,5 тыс.</b> слушателей в месяц</span><span class="chip"><b>6,8 тыс.</b> в Instagram</span><span class="chip">SIGMA Festival 2026</span></div>
+          <div class="links"><a href="https://music.yandex.ru/artist/9085393" target="_blank" rel="noopener">Яндекс Музыка</a><a href="https://www.instagram.com/trusttruetechno/" target="_blank" rel="noopener">Instagram</a><a href="https://trusttrue.ru/" target="_blank" rel="noopener">Сайт</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/forbidden-rave.jpg" alt="Forbidden Rave"><span class="role">Медиа + диджей</span></div>
+        <div class="body">
+          <h3>Forbidden Rave</h3>
+          <div class="genre">rave · techno · медиа о московских вечеринках</div>
+          <p>Диджей и автор аккаунта FRDM про лучшие вечеринки Москвы. Резидент «Приятных людей» и in.progress.music. Рилзы про московский рейв набирают 1,7 млн, 110 тыс., 69 тыс. просмотров. Ведёт свой телеграм-канал с афишей «куда пойти».</p>
+          <div class="pitch"><b>Зачем зовём</b>Приводит людей своей аудиторией, а потом разносит вечеринку по своим каналам. Один человек, который работает и как артист, и как промо.</div>
+          <div class="chips"><span class="chip"><b>1,7 млн</b> просмотров лучшего рилза</span><span class="chip"><b>5,3 тыс.</b> в Instagram</span></div>
+          <div class="links"><a href="https://www.instagram.com/forbidden.rave.diary.music/" target="_blank" rel="noopener">Instagram</a><a href="https://t.me/forbidden_rave_diary" target="_blank" rel="noopener">Telegram-канал</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/bassduma.jpg" alt="BASSDUMA"><span class="role">Дуэт · шоу</span></div>
+        <div class="body">
+          <h3>BASSDUMA</h3>
+          <div class="genre">bass · breakbeat · house · rave</div>
+          <p>Московский дуэт. Миксы для Resonance Moscow (RESOMIX 095), СБРОД (Sbrodcast в Arma), LOCAL RADIO и UTOP1A. Играли на двухлетии СБРОД в RNDM и на COMEDY PUNK RADIO в Книжном.</p>
+          <div class="pitch"><b>Зачем зовём</b>Шоу. Известные приколисты с яркими выступлениями, за которыми ходит своя публика. Площадку знают: уже играли здесь на бесплатном входе.</div>
+          <div class="chips"><span class="chip">Resonance Moscow</span><span class="chip">СБРОД</span><span class="chip">уже играли в Книжном</span></div>
+          <div class="links"><a href="https://soundcloud.com/bassduma" target="_blank" rel="noopener">SoundCloud</a><a href="https://www.instagram.com/bassdumaa/" target="_blank" rel="noopener">Instagram</a><a href="https://t.me/bassdumaa" target="_blank" rel="noopener">Telegram</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="ph"><img src="img/broken-stars.jpg" alt="Broken Stars"><span class="role">Хозяин вечера</span></div>
+        <div class="body">
+          <h3>Broken Stars</h3>
+          <div class="genre">hard techno · bass · брейкбит</div>
+          <p>Andrew Bright, основатель лейбла VAYB Underground и школы электронной музыки VAYB.PRO. Релизы на VAYB Underground, SVODKA и Mystic Sound. Совместные треки с Ra Djan («Prey»), STUDMIRE и Blessna («Не знаешь слов»), ремикс на PODLESNOV из BLAASH.</p>
+          <div class="pitch"><b>Зачем зовём</b>Собирает лайнап и отвечает за вечер. Открывает или закрывает ночь, представляет лейбл, на связи с клубом по всем вопросам.</div>
+          <div class="chips"><span class="chip">лейбл VAYB Underground</span><span class="chip">школа VAYB.PRO</span></div>
+          <div class="links"><a href="https://music.yandex.ru/artist/5850825" target="_blank" rel="noopener">Яндекс Музыка</a><a href="https://www.instagram.com/vayb_underground/" target="_blank" rel="noopener">VAYB Underground</a><a href="https://vayb.pro/" target="_blank" rel="noopener">VAYB.PRO</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="deal">
+    <div class="eyebrow">Как договариваемся</div>
+    <h2>Вы выбираете, кого хотите видеть. Остальное берём на себя</h2>
+    <div class="deal">
+      <div class="step"><div class="k">1</div><p>Смотрите шесть имён выше и отмечаете тех, кто интересен клубу. Можно всех, можно двоих.</p></div>
+      <div class="step"><div class="k">2</div><p>Под выбранных артистов обсуждаем бюджет. Гонорары здесь не пишем, это разговор голосом.</p></div>
+      <div class="step"><div class="k">3</div><p>Фиксируем дату, тайминг и техрайдер. Промо в аккаунтах артистов и VAYB Underground, афиша в тусовочных каналах - с нашей стороны.</p></div>
+    </div>
+    <div class="contact">
+      <div class="who">Andrew Bright<small>VAYB Underground · Broken Stars · организатор вечера</small></div>
+      <a class="btn" href="https://t.me/andrew_bright_stars" target="_blank" rel="noopener">Написать в Telegram</a>
+    </div>
+  </section>
+
+  <footer>
+    <div>VAYB Underground · лейбл и вечеринки · Москва</div>
+    <div><a href="https://www.instagram.com/vayb_underground/" target="_blank" rel="noopener">@vayb_underground</a> · <a href="https://www.youtube.com/@vayb_underground" target="_blank" rel="noopener">YouTube</a></div>
+  </footer>
+</div>
+</body>
+</html>
